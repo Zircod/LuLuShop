@@ -3,17 +3,10 @@ body{
     font-style: normal;
     font-weight: 400;
 }
-
-.header{
-    display: flex;
-    align-items: center;
-    height: 80px;
-}
 .header_logo{
-    margin-left: 30px;
     height: 40px;
+    margin-left: 30px;
 }
-
 .navbar-light .navbar-nav .nav-link{
     font-size: 16px;
     line-height: 16px;
@@ -22,7 +15,7 @@ body{
 }
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link{
-    border-bottom: 1px solid #000;
+   /* border-bottom: 1px solid #000;*/
     font-size: 16px;
     line-height: 16px;
     text-align: center;
@@ -38,13 +31,20 @@ body{
     padding-left: 30px;
     border-right: 1px solid #494949;
 }
+/*
 .nav-item:last-child{
-    padding-right: 100;
+    padding-right: 100px;
     border: none;
-}
+}*/
 .navbar{
     width: 100%;
+    padding-top: 50px;
 }
+/*
+.navbar-light .navbar-toggler{
+   position: absolute;
+    right: 50px;
+}*/
 .navbar>.container, .navbar>.container-fluid,
 .navbar>.container-lg, .navbar>.container-md,
 .navbar>.container-sm, .navbar>.container-xl,
@@ -54,14 +54,12 @@ body{
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
 }
-
-
 h2{
     font-size: 20px;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 .main_img{
     margin: 30px 300px;
@@ -75,8 +73,6 @@ p{
     display: flex;
     justify-content: center;
 }
-
-
 .footer {
     font-size: 14px;
     color: rgb(0, 0, 0);
