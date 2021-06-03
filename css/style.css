@@ -60,13 +60,15 @@ h2{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .main_img{
-    margin: 30px 300px;
-    height: 600px;
+    margin: 10px 100px;
+    height: 500px;
     background-image: url("../img/1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 p{
     font-size: 16px;
@@ -78,5 +80,15 @@ p{
     color: rgb(0, 0, 0);
     opacity: 0.7;
     text-align:center;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+/*
+@media (min-width: 1024px) {
+    .main_img{
+
+        height: 700px;
+
+    }
+}*/
+
