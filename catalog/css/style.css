@@ -60,22 +60,26 @@ h2{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
-/*
-p{
-    font-size: 16px;
+.catalog_row {
     display: flex;
-    position: relative;
-}*/
-.catalog_1, .catalog_2, .catalog_3, .catalog_4, .catalog_5 {
-    display: inline;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
-
+.catalog_1 {
+    padding: 30px;
+}
+.catalog_description {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
 .footer {
     font-size: 14px;
     color: rgb(0, 0, 0);
     opacity: 0.7;
     text-align:center;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
