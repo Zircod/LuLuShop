@@ -15,7 +15,6 @@ body{
 }
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link{
-  /*  border-bottom: 1px solid #000;*/
     font-size: 16px;
     line-height: 16px;
     text-align: center;
@@ -31,20 +30,10 @@ body{
     padding-left: 30px;
     border-right: 1px solid #494949;
 }
-/*
-.nav-item:last-child{
-    padding-right: 100px;
-    border: none;
-}*/
 .navbar{
     width: 100%;
     padding-top: 50px;
 }
-/*
-.navbar-light .navbar-toggler{
-    position: absolute;
-    right: 50px;
-}*/
 .navbar>.container, .navbar>.container-fluid,
 .navbar>.container-lg, .navbar>.container-md,
 .navbar>.container-sm, .navbar>.container-xl,
@@ -57,8 +46,7 @@ body{
 h2{
     font-size: 20px;
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -67,12 +55,11 @@ h2{
     justify-content: center;
     flex-wrap: wrap;
 }
-.catalog_1 {
+.catalog{
     padding: 30px;
 }
 .catalog_description {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding-top: 10px;
 }
 .footer {
