@@ -2,6 +2,8 @@ body{
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
+    /*width: 100%;
+    max-width: 100%;*/
 }
 .header_logo{
     height: 40px;
@@ -31,20 +33,10 @@ body{
     padding-left: 30px;
     border-right: 1px solid #494949;
 }
-/*
-.nav-item:last-child{
-    padding-right: 100px;
-    border: none;
-}*/
 .navbar{
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
 }
-/*
-.navbar-light .navbar-toggler{
-   position: absolute;
-    right: 50px;
-}*/
 .navbar>.container, .navbar>.container-fluid,
 .navbar>.container-lg, .navbar>.container-md,
 .navbar>.container-sm, .navbar>.container-xl,
@@ -58,11 +50,11 @@ h2{
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .main_img{
-    margin: 10px 100px;
+    margin: 20px 100px;
     height: 500px;
     background-image: url("../img/1.jpg");
     background-size: contain;
@@ -70,7 +62,7 @@ h2{
     background-position: center;
 }
 p{
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
 }
 .footer {
@@ -81,12 +73,34 @@ p{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/*
-@media (min-width: 1024px) {
-    .main_img{
 
-        height: 700px;
-
+@media (max-width: 769px) {
+    .navbar {
+        padding-top: 20px;
     }
-}*/
-
+    .header_logo {
+        height: 30px;
+        margin-left: 5px;
+    }
+    .main_img {
+        margin: 0;
+    }
+    p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 426px) {
+    .main_img {
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-top: 0;
+    }
+}

@@ -2,6 +2,8 @@ body{
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
+   /* width: 100%;
+    max-width: 100%;*/
 }
 .header_logo{
     height: 40px;
@@ -32,7 +34,7 @@ body{
 }
 .navbar{
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .navbar>.container, .navbar>.container-fluid,
 .navbar>.container-lg, .navbar>.container-md,
@@ -47,18 +49,19 @@ h2{
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 .catalog_row {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+  /*  flex-wrap: wrap;*/
 }
 .catalog{
     padding: 30px;
 }
 .catalog_description {
+    font-size: 16px;
     text-align: center;
     padding-top: 10px;
 }
@@ -69,4 +72,46 @@ h2{
     text-align:center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+@media (max-width: 769px) {
+    .navbar {
+        padding-top: 20px;
+    }
+    .header_logo {
+        height: 30px;
+        margin-left: 5px;
+    }
+    .catalog{
+        padding:30px 5px;
+    }
+    .catalog_description {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+@media (max-width: 600px) {
+    h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .catalog_row {
+        flex-wrap: nowrap;
+    }
+    #img{
+        height: 120px;
+        width: 120px;
+    }
+    .catalog_description {
+        font-size: 12px;
+    }
+}
+@media (max-width: 376px) {
+    #img{
+        height: 95px;
+        width: 95px;
+    }
+    .catalog_row {
+        flex-wrap: wrap;
+    }
 }
