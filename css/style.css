@@ -9,6 +9,15 @@ body{
     height: 40px;
     margin-left: 30px;
 }
+.navbar{
+    width: 100%;
+    padding-top: 30px;
+}
+/* кнопка меню зафиксирована, появляется до разрешения 991*/
+.navbar-light .navbar-toggler{
+    position: fixed;
+    right: 10px;
+}
 .navbar-light .navbar-nav .nav-link{
     font-size: 16px;
     line-height: 16px;
@@ -24,17 +33,15 @@ body{
     text-transform: uppercase;
     color: #000;
 }
+/*подчеркивание элементов меню с компа*/
 .navbar-expand-lg .navbar-nav .nav-link{
+    border-bottom: 1px solid #000;
     padding-left: 0;
     padding-right: 0;
 }
 .nav-item{
     padding-right: 30px;
     padding-left: 30px;
-}
-.navbar{
-    width: 100%;
-    padding-top: 30px;
 }
 .navbar>.container, .navbar>.container-fluid,
 .navbar>.container-lg, .navbar>.container-md,
@@ -76,6 +83,10 @@ p{
 @media (max-width: 769px) {
     .navbar {
         padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        border-bottom: none;
     }
     .header_logo {
         height: 30px;
@@ -89,17 +100,55 @@ p{
         margin-top: 20px;
     }
 }
-@media (max-width: 426px) {
+/*до 600px menu black*/
+@media (max-width: 600px) {
+    .header{
+        background-color: #2F3132;
+        display: flex;
+        align-items: center;
+    }
+    .header_logo_black{
+        display: none;
+    }
+    .header_logo_white{
+        display: block;
+    }
+    /*лого внутри контейнера располагается слева*/
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl{
+        justify-content: flex-start;
+    }
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+        color: #ffffff;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #ffffff;
+    }
+    .navbar-light .navbar-toggler{
+        color: #ffffff;
+        border-color: #ffffff;
+    }
     .main_img {
         height: 300px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
     h2{
-        margin-top: 10px;
         margin-bottom: 10px;
     }
     p {
         margin-top: 0;
+    }
+}
+@media (max-width: 376px) {
+    .main_img {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
