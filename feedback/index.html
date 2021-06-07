@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- для разных устройств-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuLu Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+    <link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#0e0101">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a href="index.html"><img class="header_logo header_logo_black" src="../img/logo.svg" alt="logo"></a>
+            <a href="index.html"><img class="header_logo header_logo_white" src="../img/logo_white.svg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../catalog/index.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contacts/index.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Обратная связь</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<h2>Обратная связь</h2>
+<div class="center">
+    <form class="form" action="" onsubmit="checkForm(); return false;">
+            <input type="text" id="surname" name="surname" placeholder="Фамилия" ><br><br>
+            <input type="text" id="name" name="name" placeholder="Имя" ><br><br>
+            <input type="text" id="patronymic" name="patronymic" placeholder="Отчетсво">
+            <input type="checkbox"  id="patronymic_none" name="patronymic_none" onclick="lackPatronymic()">
+            <label for="patronymic_none">Отчетсво отсутствует</label><br><br>
+            <select id="connect" name="connect" onclick="typeConnection(); return false;">
+                <option value="">Выберите тип связи</option>
+                <option value="email">email</option>
+                <option value="телефон">телефон</option>
+            </select><br>
+            <input type="email" id="email" name="email" class="email" placeholder="email" >
+            <input type="number" id="phone" name="phone" class="phone" placeholder="телефон" >
+        <br><textarea  id="request" name="request" class="request" rows="5" placeholder="Введите сообщение"></textarea><br><br>
+        <div id="info" class="form info"></div>
+        <div class="button">
+            <button class="btn" type="submit" >Отправить</button>
+        </div>
+    </form>
+</div>
+    <footer class="footer">
+    Copyright &copy; 2021 LuLu
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+</html>
