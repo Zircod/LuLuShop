@@ -13,11 +13,6 @@ body{
     width: 100%;
     padding-top: 30px;
 }
-/* кнопка меню зафиксирована, появляется до разрешения 991*/
-.navbar-light .navbar-toggler{
-    position: fixed;
-    right: 10px;
-}
 .navbar-light .navbar-nav .nav-link{
     font-size: 16px;
     line-height: 16px;
@@ -89,10 +84,23 @@ p{
 }
 /*до 600px menu black*/
 @media (max-width: 600px) {
-    .header{
+    .header {
         background-color: #2F3132;
         display: flex;
         align-items: center;
+        height: 60px;
+    }
+    /* кнопка меню зафиксирована, появляется до разрешения 991*/
+    .navbar-light .navbar-toggler{
+        position: fixed;
+        right: 10px;
+    }
+    .navbar-nav {
+        position: fixed;
+        text-align: center;
+    }
+    .container-fluid{
+        position: absolute;
     }
     .header_logo_black{
         display: none;
@@ -112,10 +120,11 @@ p{
     }
     .navbar-light .navbar-nav .nav-link.active,
     .navbar-light .navbar-nav .show>.nav-link {
-        color: #ffffff;
+        color: red;
+        padding-top: 20px;
     }
     .navbar-light .navbar-nav .nav-link {
-        color: #ffffff;
+        color: red;
     }
     .navbar-light .navbar-toggler{
         color: #ffffff;
